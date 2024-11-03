@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store </title>
+<title>Click & Chic </title>
 <body><?php include 'header.php'?>
 
 		<div class="w3l_banner_nav_right">

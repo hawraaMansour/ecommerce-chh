@@ -7,12 +7,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store</title>
+<title>Click & Chic</title>
 <body><?php include 'header.php'?>
 
 		<div class="w3l_banner_nav_right">
 			<div class="w3l_banner_nav_right_banner10">
-				<h3 style="color: black;">Best Deals For New Products<span class="blink_me"></span></h3>
+				<h3 style="color: #212121;">Best Deals For New Products !<span class="blink_me"></span></h3>
 			</div>
 			<div class="w3l_banner_nav_right_banner3_btm">
 				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">

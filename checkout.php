@@ -39,35 +39,42 @@ if (isset($_SESSION['USER_ID']) && !empty($_SESSION['USER_ID'])) {
     $total = $_SESSION['total'];
 
     // Save order in ord
-    $query = "INSERT INTO `ord`(`uid`, `total`) VALUES ($uid, $total)";
-    $result = $conn->query($query);
-    if (!$result) {
-        echo 'Error: '.$conn->error;
+    $stmt = $conn->prepare("INSERT INTO `ord`(`uid`, `total`) VALUES (?, ?)");
+    $stmt->bind_param("id", $uid, $total);
+    $stmt->execute();
+    if ($stmt->error) {
+        echo 'Error: '.$stmt->error;
         exit;
     }
+    
     // Get oid of last saved order
-    $oid = $conn->query('SELECT LAST_INSERT_ID();')
-        ->fetch_assoc()['LAST_INSERT_ID()'];
+    $oid = $conn->insert_id;
 
     // Save all ordered products in order_items
+    $stmt = $conn->prepare("INSERT INTO `order_items`(`oid`, `pid`, `quantity`, `amount`, `subtotal`) VALUES (?, ?, ?, ?, ?)");
     foreach ($products as $pid => $product) {
-        $query = "INSERT INTO `order_items`(`oid`, `pid`, `quantity`, `amount`, `subtotal`) 
-        VALUES ($oid, $pid, $product[quantity], $product[amount], $product[subtotal])";
-        $result = $conn->query($query);
-        if (!$result) {
-            echo 'Error: '.$conn->error;
+        $quantity = isset($product['quantity']) ? $product['quantity'] : 0;
+        $amount = isset($product['amount']) ? $product['amount'] : 0;
+        $subtotal = isset($product['subtotal']) ? $product['subtotal'] : 0;
+        
+        $stmt->bind_param("iiddd", $oid, $pid, $quantity, $amount, $subtotal);
+        $stmt->execute();
+        if ($stmt->error) {
+            echo 'Error: '.$stmt->error;
             exit;
         }
     }
 
     // Save payment info in payment
-    $query = "INSERT INTO `payment`(`total_amount`, `payment_type`, `oid`, `uid`) VALUES ($total, 'COD', $oid, $uid)";
-    $result = $conn->query($query);
-    if (!$result) {
-        echo 'Error: '.$conn->error;
+    $stmt = $conn->prepare("INSERT INTO `payment`(`total_amount`, `payment_type`, `oid`, `uid`) VALUES (?, 'COD', ?, ?)");
+    $stmt->bind_param("dii", $total, $oid, $uid);
+    $stmt->execute();
+    if ($stmt->error) {
+        echo 'Error: '.$stmt->error;
         exit;
     }
 }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -103,7 +110,7 @@ if (isset($_SESSION['USER_ID']) && !empty($_SESSION['USER_ID'])) {
                     <div class="col-md-12 address_form_agile">
                         <section class="creditly-wrapper wthree, w3_agileits_wrapper" style="margin-top: 35px">
                             <div class="information-wrapper">
-                                <button class="submit check_out btn-block" style="background: linear-gradient(to bottom, #3333ff 0%, #212121 100%); color: white; border: none; padding: 10px 20px; border-radius: 5px;">Your order has been placed</button>
+                                <button class="submit check_out btn-block" style="color: white; border: none; padding: 10px 20px; border-radius: 5px;">Your order has been placed</button>
                             </div>
                         </section>
                     </div>

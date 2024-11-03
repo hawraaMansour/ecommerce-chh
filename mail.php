@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store</title>
+<title>Click & Chic</title>
 <body>
 <?php
 require 'dbcon.php';
@@ -61,7 +61,7 @@ if (isset($_POST['Name']) && isset($_POST['Mobile']) && isset($_POST['msg'])) {
 						<div class="clearfix"> </div>
 						<textarea  name="msg" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required>Message...</textarea>
 
-                        <input type="submit"  name="submit" value="Submit">
+                        <input type="submit"  name="submit" value="Submit" style="margin-left: 1.1em;">
 						<input type="reset" value="Clear">
 					</form>
 				</div>

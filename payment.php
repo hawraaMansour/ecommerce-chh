@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Payment :: w3layouts</title>
+<title>Click & Chic a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Payment :: w3layouts</title>
 <body><?php include 'header.php'?>
 
 		<div class="w3l_banner_nav_right">

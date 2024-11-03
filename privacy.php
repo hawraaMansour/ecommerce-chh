@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Privacy Policy :: w3layouts</title>
+<title>Click & Chic a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Privacy Policy :: w3layouts</title>
 <body>
 <?php include 'header.php' ?>
 

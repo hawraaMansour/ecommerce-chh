@@ -50,7 +50,7 @@
     position: relative;
     padding: 6px 50px 11px;
     letter-spacing: 3px;
-    background:#84c639;
+    background: linear-gradient(to bottom, #212121 0%, #9033ff 100%);
     font-size: 1.5em;
     color: #fff;
     font-weight: 500;
@@ -64,7 +64,7 @@
     text-transform: uppercase;
 }
 .creditly-card-form .submit span:hover{
-    background: #3333ff;
+	background: linear-gradient(to bottom, #792ca7 0%, #792ca7 100%);
     color: #fff;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;

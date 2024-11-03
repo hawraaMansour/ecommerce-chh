@@ -9,7 +9,7 @@ if ($category) {
     $result = mysqli_query($conn, "SELECT * FROM `product` WHERE `cid` = $category");
 } else {
     $title = 'All products';
-    $result = mysqli_query($conn, 'SELECT * FROM `product` LIMIT 20');
+    $result = mysqli_query($conn, 'SELECT * FROM `product` ');
 }
 ?>
 <!--
@@ -21,16 +21,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title><?php echo $title; ?> | Grocery Store</title>
+<title><?php echo $title; ?> | Click & Chic</title>
 <body>
     <?php include 'header.php'?>
 		<div class="w3l_banner_nav_right">
 			<div class="w3l_banner_nav_right_banner4">
-				<h3 style="color: black;">Best Deals For New Products<span class="blink_me"></span></h3>
+				<h3 style="color:  #212121; font-weight: 400;">Best Deals For New Products !<span class="blink_me"></span></h3>
 			</div>
 			<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_sub">
 				<h3><?php echo $title; ?></h3>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
+				<div class="w3ls_w3l_banner_nav_right_grid1" style="display: flex;">
 					<!--<h6>cleaning</h6>-->
                 <?php
                 if ($result->num_rows) {

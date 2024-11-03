@@ -12,7 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store </title>
+<title>Click & Chic </title>
 <body>
 <?php include 'header.php'?>
 <div class="w3l_banner_nav_right">
@@ -21,7 +21,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul class="slides">
                 <li>
                     <div class="w3l_banner_nav_right_banner">
-                        <h3 style="color: black;">Step Up Your<span>Style with</span>Exclusive Deals.</h3>
+                        <h3 style="color: #532f62;">Step Up Your<span>Style with</span>Exclusive Deals.</h3>
                         <div class="more">
                             <a href="products.php" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
                         </div>
@@ -29,7 +29,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </li>
                 <li>
                     <div class="w3l_banner_nav_right_banner1">
-                        <h3 style="color: black;">Upgrade Your<span>Look with</span>Discounts.</h3>
+                        <h3 style="color:#532f62;">Upgrade Your<span>Look with</span>Discounts.</h3>
                         <div class="more">
                             <a href="products.php" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
                         </div>
@@ -37,7 +37,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </li>
                 <li>
                     <div class="w3l_banner_nav_right_banner2">
-                        <h3 style="color: black;">upto <i style="color: black;">50%</i> off.</h3>
+                        <h3 style="color: #532f62;">upto <i style="color: #532f62;">50%</i> off.</h3>
                         <div class="more">
                             <a href="products.php" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
                         </div>
@@ -148,31 +148,46 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="fresh-vegetables">
     <div class="container">
         <h3>Top Products</h3>
-        <div class="w3l_fresh_vegetables_grids">
+        <div class="w3l_fresh_vegetables_grids" style="width:auto; height: 480px;">
             <div class="col-md-3 w3l_fresh_vegetables_grid w3l_fresh_vegetables_grid_left">
                 <div class="w3l_fresh_vegetables_grid2">
-                    <ul>
-
-                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.php">Vegetables</a></li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.php">Fruits</a></li>
-
-
-                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="household.php">Cleaning</a></li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.php">Spices</a></li>
-
-                    </ul>
+                <h1 style="color:#9033ff; margin-bottom:10px;">Explore our</h1>
+                <h1 style="color:#9033ff; margin-bottom:10px;">top products and</h1>
+                <h1 style="color:#9033ff; margin-bottom:10px;">find the best</h1>
+                <h1 style="color:#9033ff; margin-bottom:10px;">deals on</h1>
+                <h1 style="color:#9033ff; margin-bottom:10px;">customer</h1>
+                <h1 style="color:#9033ff;">favorites!</h1>
                 </div>
+        <!--                   <div class="w3l_fresh_vegetables_grid1_bottom_pos">
+                            <h5>Special Offers</h5>
+                         </div>-->
             </div>
-            <div class="col-md-9 w3l_fresh_vegetables_grid_right">
+            
+            <div class="col-md-9 w3l_fresh_vegetables_grid_right" style="width:680px; height: 450px;">
                 <div class="col-md-4 w3l_fresh_vegetables_grid">
                     <div class="w3l_fresh_vegetables_grid1">
-                        <img src="images/8.jpg" alt=" " class="img-responsive" />
+                        <img src="images/1721059619-shoes6.jpg" alt=" " class="img-responsive"  style="margin-bottom: 0px; width:240px; height:170px;"/>  
+                           
                     </div>
-                </div>
-                <div class="col-md-4 w3l_fresh_vegetables_grid">
+                    <div class="agileinfo_move_text">
+                    <div class="agileinfo_marquee">
+                        <h4 style="text-align: center;">get <span class="blink_me">25% off</span> on first order and also get gift voucher</h4>
+                    </div>
+                    <div class="agileinfo_breaking_news">
+                        <span> </span>
+                    </div>
+                    <div class="clearfix"></div>
+                   </div>
                     <div class="w3l_fresh_vegetables_grid1">
-                        <div class="w3l_fresh_vegetables_grid1_rel">
-                            <img src="images/7.jpg" alt=" " class="img-responsive" />
+                        <img src="images/3600531453404_Fit_Me_Foundation_245.webp" alt=" " class="img-responsive"  style="margin-top: 5px; width:240px; height:140px;"/>  
+                           
+                      </div>
+                   </div>
+                <div class="col-md-4 w3l_fresh_vegetables_grid" style="width:200px; height:400px;">
+                    <div class="w3l_fresh_vegetables_grid1" style="width:200px; height:200px;">
+                        <div class="w3l_fresh_vegetables_grid1_rel" >
+                        <img src="images/makeup1.jpg" alt=" " class="img-responsive" style="width:200px; height:200px;" />
+
                             <div class="w3l_fresh_vegetables_grid1_rel_pos">
                                 
                                 <!-- <div class="more m1">
@@ -181,31 +196,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </div>
                         </div>
                     </div>
-                    <div class="w3l_fresh_vegetables_grid1_bottom">
-                        <img src="images/10.jpg" alt=" " class="img-responsive" />
-                        <div class="w3l_fresh_vegetables_grid1_bottom_pos">
-                            <h5>Special Offers</h5>
-                        </div>
+                    <div class="w3l_fresh_vegetables_grid1_bottom" style="width:200px; height:200px;">
+                       <img src="images/perfume5.webp" alt=" " class="img-responsive" style="width:200px; height:200px;" />
                     </div>
                 </div>
-                <div class="col-md-4 w3l_fresh_vegetables_grid">
-                    <div class="w3l_fresh_vegetables_grid1">
-                        <img src="images/9.jpg" alt=" " class="img-responsive" />
+                <div class="col-md-4 w3l_fresh_vegetables_grid" style="width:200px; height:400px; margin-left:20px;">
+                  <div class="w3l_fresh_vegetables_grid1" style="width:180px; height:180px; display:flex;">
+                 <img src="images/1721059235-shoes3.jfif" alt=" " class="img-responsive" style="width:180px; height:180px; margin-top:20px;" />
+                 <img src="images/shoes3.jpg" alt=" " class="img-responsive" style="width:180px; height:180px; margin-left:10px;" />
+                 </div>
+
+                    <div class="w3l_fresh_vegetables_grid1_bottom" style="width:200px; height:200px; display:flex;">
+                    <img src="images/1722199336-ggg.jpg" alt=" " class="img-responsive" style="width:200px; height:200px; margin-top:20px;" />
+                    <img src="images/1722795021-rose.jfif" alt=" " class="img-responsive" style="width:180px; height:180px; margin-left:7px;" />
                     </div>
-                    <div class="w3l_fresh_vegetables_grid1_bottom">
-                        <img src="images/11.jpg" alt=" " class="img-responsive" />
-                    </div>
+                    
                 </div>
                 <div class="clearfix"> </div>
-                <div class="agileinfo_move_text">
-                    <div class="agileinfo_marquee">
-                        <h4>get <span class="blink_me">25% off</span> on first order and also get gift voucher</h4>
-                    </div>
-                    <div class="agileinfo_breaking_news">
-                        <span> </span>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
+                
             </div>
             <div class="clearfix"> </div>
         </div>

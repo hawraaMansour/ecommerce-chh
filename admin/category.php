@@ -89,23 +89,35 @@ $total_category = $result->num_rows;
                                     </thead>
                                     <tbody>
                                         <?php
-                                        if ($total_category) {
-                                            while ($row = $result->fetch_assoc()) {
-                                                $result1 = $conn->query("SELECT `name` FROM `category` WHERE `cid` = $row[parent_id]");
-                                                $category = $result1->fetch_assoc(); ?>
-                                        <tr>
-                                            <td><?=$row['cid']?></td>
-                                            <td><?=$row['name']?></td>
-                                            <td><?=$category['name']?></td>
-                                            <td class="text-nowrap">
-                                                <a href="category-edit.php?id=<?=$row['cid']?>" class="btn btn-outline-info">
-                                                	<i class="fa fa-close text-info"></i> Edit
-                                                </a>
-                                                <a href="include/category-delete.php?id=<?=$row['cid']?>" class="btn btn-outline-danger">
-                                                	<i class="fa fa-close text-danger"></i> Remove
-                                                </a>
-                                            </td>
-                                        </tr>
+                                       if ($total_category) {
+                                        while ($row = $result->fetch_assoc()) {
+                                            // Check if parent_id is 0 or NULL
+                                            if ($row['parent_id'] == 0 || is_null($row['parent_id'])) {
+                                                $parent_name = "Root Category";
+                                            } else {
+                                                $result1 = $conn->query("SELECT name FROM category WHERE cid = $row[parent_id]");
+                                                $category = $result1->fetch_assoc();
+                                                // Check if a parent category was found
+                                                if ($category) {
+                                                    $parent_name = $category['name'];
+                                                } else {
+                                                    $parent_name = "No Parent";
+                                                }
+                                            }
+                                            ?>
+                                            <tr>
+                                                <td><?=$row['cid']?></td>
+                                                <td><?=$row['name']?></td>
+                                                <td><?=$parent_name?></td>
+                                                <td class="text-nowrap">
+                                                    <a href="category-edit.php?id=<?=$row['cid']?>" class="btn btn-outline-info">
+                                                        <i class="fa fa-close text-info"></i> Edit
+                                                    </a>
+                                                    <a href="include/category-delete.php?id=<?=$row['cid']?>" class="btn btn-outline-danger">
+                                                        <i class="fa fa-close text-danger"></i> Remove
+                                                    </a>
+                                                </td>
+                                            </tr>
 										<?php
                                             }
                                         }

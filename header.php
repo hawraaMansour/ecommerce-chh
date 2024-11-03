@@ -44,7 +44,7 @@
 <body>
     <!-- header -->
     <div class="agileits_header">
-      <div class="w3l_offers"> <a href="#">Grocery shopping</a> </div>
+      <div class="w3l_offers"> <a href="#">Click & Chic</a> </div>
       <div class="w3l_search">
         <form action="search.php" method="post">
           <input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
@@ -53,11 +53,14 @@
       </div>
       <div class="product_list_header">
         <form action="#" method="post" class="last">
-          <fieldset>
+        
+       <?php if (isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in'] == 1) {
+    echo '<fieldset>
             <input type="hidden" name="cmd" value="_cart" />
             <input type="hidden" name="display" value="1" />
-            <input type="submit" name="submit" value="View your cart" class="button"  />
-          </fieldset>
+            <input type="submit" name="submit" value="View your cart" class="button" />
+          </fieldset>';
+} ?>
         </form>
       </div>
       <div class="w3l_header_right">
@@ -110,7 +113,7 @@
     <div class="logo_products">
       <div class="container">
         <div class="w3ls_logo_products_left">
-          <h1><a href="index.php"><span>Grocery</span> Shop</a></h1>
+          <h1><a href="index.php"><span>Click&</span> Chic</a></h1>
         </div>
         <div class="w3ls_logo_products_left1">
           <ul class="special_items">
@@ -121,7 +124,7 @@
         <div class="w3ls_logo_products_left1">
           <ul class="phone_email">
             <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+919979331605">(+961) 71368392</a></li>
-            <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:store@grocery.com"> <a href="glam:store@grocery.com">store@grocery.com</a></li>
+            <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:store@clickNchic.com"> <a href="glam:store@clickNchic.com">store@clickNchic.com</a></li>
           </ul>
         </div>
         <div class="clearfix"></div>
@@ -176,53 +179,8 @@
                       }
                   }
                   ?>
-<!--
-                <li><a href="household.php">Home Care</a></li>
-                <li><a href="vegetables.php">Vegetables</a></li>
-                <li><a href="shampoo.php">Personal Care</a></li>
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Staples<span class="caret"></span>
-                    </a>
-                  <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-                    <div class="w3ls_vegetables">
-                      <ul>
-                        <li><a href="puls.php">Pulse</a></li>
-                        <li><a href="cerels.php">cerels</a></li>
-                        <li><a href="ms.php">Masala and spices</a></li>
-                        <li><a href="rice.php">Oil Rice And Suger</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
--->
-
-                <!--<li class="dropdown mega-dropdown active">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>				
-                                    <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-                                        <div class="w3ls_vegetables">
-                                            <ul>	
-                                                <li><a href="vegetables.php">Vegetables</a></li>
-                                                <li><a href="vegetables.php">Fruits</a></li>
-                                            </ul>
-                                        </div>                  
-                                    </div>				
-                                </li> !-->
-                <!--<li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Persnal Care<span class="caret"></span></a>
-                                    <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-                                        <div class="w3ls_vegetables">
-                                            <ul>
-                                                <li><a href="shampoo.php">Shampoo</a></li>
-                                                <li><a href="soap.php">Soap</a></li>
-                                            </ul>
-                                        </div>                  
-                                    </div>	
-                                </li>!-->
 
               </ul>
             </div>
-            <!-- /.navbar-collapse --> 
           </nav>
         </div>

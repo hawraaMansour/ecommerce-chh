@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store</title>
+<title>Click & Chic</title>
 <body>
 </body><?php require 'dbcon.php';
 require 'header.php';
@@ -17,8 +17,8 @@ require 'header.php';
                             
 
 		<div class="w3l_banner_nav_right">
-			<div class="w3l_banner_nav_right_<img src="images/grob3.jpg" alt=""  style="height:300px; width:1070px;">
-            <img src="images/grob3.jpg" alt="" style="height:300px; width:1070px;">
+			<div class="w3l_banner_nav_right_<img src="images/lipstick-mascara.jpg" alt=""  style="height:300px; width:1070px;">
+            <img src="images/lipstick-mascara.jpg" alt="" style="height:300px; width:1070px;">
 				
 			</div>
 			<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_sub">

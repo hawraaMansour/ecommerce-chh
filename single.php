@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Single :: w3layouts</title>
+<title>Click & Chic a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Single :: w3layouts</title>
 </head>
 <body>  <?php require 'dbcon.php' ?> 
         <?php include 'header.php'?>
@@ -21,7 +21,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					
 		<div class="w3l_banner_nav_right">
 			<div class="w3l_banner_nav_right_banner3">
-				<h3 style="color: black;">Best Deals For New Products<span class="blink_me"></span></h3>
+				<h3 style="color:  #212121;">Best Deals For New Products !<span class="blink_me"></span></h3>
 			</div>
 			<div class="agileinfo_single">
 				<h5><?php echo($row['name']) ?></h5>

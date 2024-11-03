@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>GroceryStore a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | About Us :: w3layouts</title>
+<title>Click & Chic a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | About Us :: w3layouts</title>
 <body><?php
 require 'dbcon.php';
 require 'header.php';
@@ -21,9 +21,9 @@ require 'header.php';
 				<div class="col-md-6 agile_about_grid_left">
 					<ol>
 						<li>Perfume</li>
-						<li>make up</li>
-						<li>watches</li>
-						<li>personal care products</li>
+						<li>Make up</li>
+						<li>Watches</li>
+						<li>Personal care products</li>
 					</ol>
 				</div>
 				<div class="clearfix"> </div>
@@ -34,20 +34,20 @@ require 'header.php';
 		<div class="clearfix"></div>
 	</div>
 <!-- //banner -->
-<!-- team -->
-	<div class="team">
+<!-- team 
+ 	<div class="team">
 				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
-<!-- //team -->
-<!-- testimonials -->
+
 	<div class="testimonials">
 		<div class="container">
 			
 				
 		</div>
-	</div>
+	</div>-->
+
 <?php include 'footer.php'?>
 </body>
 </html>

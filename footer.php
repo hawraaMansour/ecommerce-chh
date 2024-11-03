@@ -29,13 +29,13 @@
 				    </ul>
                     <ul class="phone_email">
                         <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+919979331605">(+91) 9979331605</a></li>
-                        <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:store@grocery.com">store@grocery.com</a></li>
+                        <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:store@clickNchic.com">store@clickNchic.com</a></li>
 				    </ul>
 				</ul>
 			</div>
 			<div class="clearfix"></div>
 			<div class="wthree_footer_copy">
-				<p>© <?=date('Y')?> Grocery Store. All rights reserved | Design by <a href="http://w3layouts.com/">Himani</a></p>
+				<p>© <?=date('Y')?> Click & Chic. All rights reserved | Design by <a href="http://w3layouts.com/">us</a></p>
 			</div>
 		</div>
 </div>

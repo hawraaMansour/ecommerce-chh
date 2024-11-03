@@ -95,13 +95,13 @@ html[xmlns] .slides {display: block;}
     background: none;
     cursor: pointer;
     text-indent: -9999px;
-    border:2px solid #3333ff;
+    border:2px solid #9033ff;
 	border-radius:20px;
 }
 .flex-control-paging li a.flex-active { 
-	background: #3333ff;
+	background: #9033ff;
     cursor: default;
-    border: 2px solid #3333ff;
+    border: 2px solid #9033ff;
 }
 .flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
 .flex-control-thumbs li {width: 25%; float: left; margin: 0;}
